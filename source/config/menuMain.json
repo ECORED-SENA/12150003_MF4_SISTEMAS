@@ -1,0 +1,29 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al Inicio",
+    "path": "../"
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "componentes-bs",
+    "title": "1. Componentes",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/1-tema.html"   
+  },
+
+  {
+    "id": 2,
+    "icon": "fa fa-play-circle",
+    "slug": "tema-2",
+    "title": "2. Título Tema",
+    "breadcrumb": [
+      "Inicio",
+      "Tema 2"
+    ],
+    "path": "pages/2-tema.html"
+  }
+
+]
