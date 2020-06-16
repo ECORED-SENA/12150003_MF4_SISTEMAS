@@ -4,7 +4,7 @@
     "slug": "external",
     "title": "Volver al Inicio",
     "path": "../"
-  },  
+  },
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
@@ -50,5 +50,11 @@
     "title": "3. Normatividad.",
     "breadcrumb": ["Inicio","Introducción"],
     "path": "pages/4-tema.html"   
+  },
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
   }
 ]
