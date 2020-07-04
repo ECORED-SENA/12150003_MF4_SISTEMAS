@@ -9,7 +9,7 @@
     "id": 1,
     "icon": "fa fa-play-circle",
     "slug": "introduccion",
-    "title": "Introducción.",
+    "title": "Introducción",
     "breadcrumb": ["Inicio","Introducción"],
     "path": "pages/1-tema.html"   
   },
@@ -17,20 +17,20 @@
     "id": 2,
     "icon": "fa fa-file-text",
     "slug": "informes",
-    "title": "1. Informes técnicos en las organizaciones.",
+    "title": "1. Informes técnicos en las organizaciones",
     "breadcrumb": ["Inicio","Informes"],
     "path": "pages/2-tema.html",
     "submenu": [
       {
         "icon": "fa fa-file-text",
         "slug": "informes",
-        "title": "1.1. Generalidades y características.",
+        "title": "1.1. Generalidades y características",
         "anchor": "generalidades"
       },
       {
         "icon": "fa fa-file-text",
         "slug": "informes",
-        "title": "1.2. Estructura.",
+        "title": "1.2. Estructura",
         "anchor": "estructura"
       }
     ]
@@ -39,7 +39,7 @@
     "id": 3,
     "icon": "fa fa-file-text",
     "slug": "presentacion",
-    "title": "2. Presentación de un informe técnico.",
+    "title": "2. Presentación de un informe técnico",
     "breadcrumb": ["Inicio","Introducción"],
     "path": "pages/3-tema.html"   
   },
@@ -47,7 +47,7 @@
     "id": 4,
     "icon": "fa fa-file-text",
     "slug": "normatividad",
-    "title": "3. Normatividad.",
+    "title": "3. Normatividad",
     "breadcrumb": ["Inicio","Introducción"],
     "path": "pages/4-tema.html"   
   },
