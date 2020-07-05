@@ -194,104 +194,103 @@ include ../mixins/functions
 
                     p Es un poco más conciso que el informe científico, tiene 5 elementos esenciales que permiten mostrar claramente el estado de una situación en particular y se caracteriza por su precisión:
 
-        .row
+        .col-12
 
-            .col-12
-                #accordionExample.accordion
+            #accordionExample.accordion
 
-                    .card
-                        #heading1.card-header
-                            p(style="margin-top: 1rem")
-                                button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapse1', aria-expanded='true', aria-controls='collapse1')
-                                    p(style="color: #FFFFFF; font-size: 20px").mb-0 Resumen
-                        #collapse1.collapse.show(aria-labelledby='heading1', data-parent='#accordionExample', style="background-color: #E5F4F3")
-                            .card-body
+                .card
+                    #headingOne.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                p(style="color: #FFFFFF; font-size: 20px").mb-0 Resumen
+                    #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample', style="background-color: #E0F5FF")
+                        .card-body
 
-                                .row.justify-content-center.align-items-center
+                            .row.justify-content-center.align-items-center
 
-                                    .col-auto
-                                        
-                                        img(src="assets/images/pages/img1.svg", style="max-width: 80%").rounded.mx-auto.d-block
+                                .col-auto
+                                    
+                                    img(src="assets/images/pages/img1.svg", style="max-width: 80%").rounded.mx-auto.d-block
 
-                                    .col-10
-                                        
-                                        p El límite de palabras que se pueden determinar previamente para conservar un aspecto homogéneo en los diferentes informes técnicos regularmente está entre 200 y 300 palabras.
-                    
-                    .card
-                        #heading2.card-header
-                            p(style="margin-top: 1rem")
-                                button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapse2', aria-expanded='true', aria-controls='collapse2')
-                                    p(style="color: #FFFFFF; font-size: 20px").mb-0 Introducción
-                        #collapse2.collapse(aria-labelledby='heading2', data-parent='#accordionExample', style="background-color: #E5F4F3")
-                            .card-body.justify-content-center.align-items-center(style="display: flex")
+                                .col-10
+                                    
+                                    p El límite de palabras que se pueden determinar previamente para conservar un aspecto homogéneo en los diferentes informes técnicos regularmente está entre 200 y 300 palabras.
+        
+                .card
+                    #headingTwo.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                p(style="color: #FFFFFF; font-size: 20px").mb-0 Introducción
+                    #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample', style="background-color: #E5F4F3")
+                        .card-body
 
-                                .row.justify-content-center.align-items-center
+                            .row.justify-content-center.align-items-center
 
-                                    .col-auto
-                                        
-                                        img(src="assets/images/pages/img2.svg", style="max-width: 80%").rounded.mx-auto.d-block
+                                .col-auto
+                                    
+                                    img(src="assets/images/pages/img2.svg", style="max-width: 80%").rounded.mx-auto.d-block
 
-                                    .col-10
-                                        
-                                        p Es la contextualización del tema a tratar, permite al lector ubicarse en espacio y tiempo sobre el tema a desarrollar. Regularmente, para una introducción en un informe técnico, se utiliza entre 1 página y media, y 2 páginas.
-                    
-                    .card
-                        #heading3.card-header
-                            p(style="margin-top: 1rem")
-                                button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapse3', aria-expanded='true', aria-controls='collapse3')
-                                    p(style="color: #FFFFFF; font-size: 20px").mb-0 Contenido y desarrollo del informe
-                        #collapse3.collapse(aria-labelledby='heading3', data-parent='#accordionExample', style="background-color: #E5F4F3")
-                            .card-body.justify-content-center.align-items-center(style="display: flex")
+                                .col-10
+                                    
+                                    p Es la contextualización del tema a tratar, permite al lector ubicarse en espacio y tiempo sobre el tema a desarrollar. Regularmente, para una introducción en un informe técnico, se utiliza entre 1 página y media, y 2 páginas.
+                
+                .card
+                    #headingThree.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                p(style="color: #FFFFFF; font-size: 20px").mb-0 Antecedentes
+                    #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample', style="background-color: #E5F4F3")
+                        .card-body
 
-                                .row.justify-content-center.align-items-center
+                            .row.justify-content-center.align-items-center
 
-                                    .col-auto
-                                        
-                                        img(src="assets/images/pages/img3.svg", style="max-width: 80%").rounded.mx-auto.d-block
+                                .col-auto
+                                    
+                                    img(src="assets/images/pages/img3.svg", style="max-width: 80%").rounded.mx-auto.d-block
 
-                                    .col-10
-                                        
-                                        p La extensión del desarrollo del informe no tiene límite específico, ya que, según la complejidad y detalle del tema, así será la amplitud. Independiente de su extensión, debe conservar la coherencia entre las ideas, un nivel adecuado de síntesis y que los objetivos planteados desde el inicio se evidencien su desarrollo y logro.
+                                .col-10
+                                    
+                                    p La extensión del desarrollo del informe no tiene límite específico, ya que, según la complejidad y detalle del tema, así será la amplitud. Independiente de su extensión, debe conservar la coherencia entre las ideas, un nivel adecuado de síntesis y que los objetivos planteados desde el inicio se evidencien su desarrollo y logro.
 
-                    .card
-                        #heading4.card-header
-                            p(style="margin-top: 1rem")
-                                button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapse4', aria-expanded='true', aria-controls='collapse4')
-                                    p(style="color: #FFFFFF; font-size: 20px").mb-0 Conclusiones
-                        #collapse4.collapse(aria-labelledby='heading4', data-parent='#accordionExample', style="background-color: #E5F4F3")
-                            .card-body.justify-content-center.align-items-center(style="display: flex")
+                .card
+                    #headingFour.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
+                                p(style="color: #FFFFFF; font-size: 20px").mb-0 Período que abarca y dónde se realizó
+                    #collapseFour.collapse(aria-labelledby='headingThree', data-parent='#accordionExample', style="background-color: #E5F4F3")
+                        .card-body
 
-                                .row.justify-content-center.align-items-center
+                           .row.justify-content-center.align-items-center
 
-                                    .col-auto
-                                        
-                                        img(src="assets/images/pages/img4.svg", style="max-width: 80%").rounded.mx-auto.d-block
+                                .col-auto
+                                    
+                                    img(src="assets/images/pages/img4.svg", style="max-width: 80%").rounded.mx-auto.d-block
 
-                                    .col-10
-                                        
-                                        p En este punto se presenta de forma resumida los aspectos tratados durante el desarrollo del informe.
+                                .col-10
+                                    
+                                    p En este punto se presenta de forma resumida los aspectos tratados durante el desarrollo del informe.
 
-                    .card
-                        #heading5.card-header
-                            p(style="margin-top: 1rem")
-                                button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapse5', aria-expanded='true', aria-controls='collapse5')
-                                    p(style="color: #FFFFFF; font-size: 20px").mb-0 Metodología
-                        #collapse5.collapse(aria-labelledby='heading5', data-parent='#accordionExample', style="background-color: #E5F4F3")
-                            .card-body.justify-content-center.align-items-center(style="display: flex")
+                .card
+                    #headingFive.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseThree')
+                                p(style="color: #FFFFFF; font-size: 20px").mb-0 Objetivo general
+                    #collapseFive.collapse(aria-labelledby='headingThree', data-parent='#accordionExample', style="background-color: #E5F4F3")
+                        .card-body
 
-                                .row.justify-content-center.align-items-center
+                            .row.justify-content-center.align-items-center
 
-                                    .col-auto
-                                        
-                                        img(src="assets/images/pages/img5.svg", style="max-width: 80%").rounded.mx-auto.d-block
+                                .col-auto
+                                    
+                                    img(src="assets/images/pages/img5.svg", style="max-width: 80%").rounded.mx-auto.d-block
 
-                                    .col-10
-                                        
-                                        p Es importante describir, en este punto del informe, la secuencia de actividades y pasos realizados para su desarrollo, citando adecuadamente las referencias y fuentes tomadas.
+                                .col-10
+                                    
+                                    p Es importante describir, en este punto del informe, la secuencia de actividades y pasos realizados para su desarrollo, citando adecuadamente las referencias y fuentes tomadas.
 
     br
 
-    .row
+    .row.mx-0
 
         .col-12.col-md-6(style="background-color: #FFFFFF; padding: 1rem")
 
